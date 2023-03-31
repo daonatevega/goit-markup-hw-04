@@ -140,10 +140,6 @@ body {
   font-style: normal;
 }
 
-.custom-item-list:hover {
-  color: var(--primary-color);
-}
-
 /* color y tamaños de fuentes de los textos del header con anchor*/
 .custom-item-list-contact {
   color: var(--paragraph-color);
@@ -152,10 +148,6 @@ body {
   font-weight: 500;
   line-height: 1.2;
   font-style: normal;
-}
-
-.custom-item-list-contact:hover {
-  color: var(--primary-color);
 }
 
 .visited-page:visited {
@@ -256,7 +248,7 @@ body {
 .background-text-main {
   background-image: url('../img/Main-text-studio.jpg'),url('../img/Main-text-bg-studio.jpg');
   background-color: var(--background-color);
-  width: 1600px;
+  width: 100%;
   height: 600px;
 }
 
@@ -282,29 +274,14 @@ body {
   margin-top: 94px;
 }
 
-.section{
-  width: 1600;
-  margin: 0 auto;
-  height: auto;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .container{
-  width: 1200px;
   margin: 0 auto;
+  width: 1200px;
 }
 
 .container-main-footer-header{
   width: 1600px;
   margin: 0 auto;
-}
-.flex-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .pd-0{
@@ -393,25 +370,13 @@ body {
   align-items: center; 
 }
 
-.icon-about{
-  width: 16px;
-  height: 12px;
+.icon-contact{
+  fill: var(--paragraph-color);
 }
 
-.icon-about:hover{
+.icon-contact:hover *{
   cursor: pointer;
-  fill: var(--primary-color);
-  stroke: var(--primary-color);
-  stroke-width: var(--primary-color);
-}
-
-.icon-Smartphone{
-  width: 10px;
-  height: 16px;
-}
-
-.icon-Smartphone:hover{
-  cursor: pointer;
+  color: var(--primary-color);
   fill: var(--primary-color);
   stroke: var(--primary-color);
   stroke-width: var(--primary-color);
@@ -427,16 +392,15 @@ body {
   justify-items: center;
   justify-content: center;
   align-items: center;
-  width: contain;
-  /*width: auto;
-  height: 600px;*/
+  width: 100%;
+  height: 600px;
 }
 
 .text-main-flexbox{
-
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-text-and-buttom{
@@ -450,7 +414,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card-skills-list{
@@ -502,7 +466,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card-flex-dedicate{
@@ -548,7 +512,7 @@ body {
 
 .section-team-flex{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card-flex{
@@ -620,7 +584,7 @@ body {
 .customer{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .icon-card-customer{
@@ -685,6 +649,7 @@ body {
 .nav-briefcase{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-top: 60px;
   margin-bottom: 20px;
 }
@@ -699,6 +664,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
 }
 
 .product-center{
